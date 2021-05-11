@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+    stonks:
+        build: 
+            context: "."
+            dockerfile: "./stonks/Dockerfile"
+        ports: 
+            - "007:2222"
+        volumes: 
+            - ./stonks:/ya/yeet
